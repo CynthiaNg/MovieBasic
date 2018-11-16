@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/rating_title"
+              android:text="Enter your review for the movie: Venom"
+              style="@style/Base.TextAppearance.AppCompat.Medium"
+    />
+
+    <RatingBar
+            android:id="@+id/movieRateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0.0"
+            android:stepSize="0.5"
+            />
+
+    <EditText
+            android:id="@+id/movie_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="6"
+            android:hint="Share your view on the show"
+            android:gravity="top"
+    />
+</LinearLayout>

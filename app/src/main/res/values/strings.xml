@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">MovieRater</string>
+    <string name="rbtn_english">English</string>
+    <string name="rbtn_chinese">Chinese</string>
+    <string name="rbtn_malay">Malay</string>
+    <string name="rbtn_tamil">Tamil</string>
+    <string name="checkbox1_text">Not suitable for all audience</string>
+    <string name="checkbox2_text">Violence</string>
+    <string name="checkbox3_text">Langauge used</string>
+    <string name="button_text">ADD MOVIE</string>
+
+</resources>
