@@ -22,13 +22,26 @@ class MovieRateActivity : AppCompatActivity() {
         if(item?.itemId == R.id.menu_item_submit) {
 
             val rating = movieRateBar.rating
-            val ratingText = movie_review.text
+            val reviewText = movie_review.text
 
-            val movie = MainActivity.movie
-            movie.reviewStar = rating
-            movie.reviewText = ratingText.toString()
+            var error = false
 
-            finish()
+            if(rating == 0.0f){
+                error = true
+            }
+
+            if(reviewText.isNullOrEmpty()) {
+                error = true
+            }
+
+            if(!error) {
+
+                val movie = MainActivity.movie
+                movie.reviewStar = rating
+                movie.reviewText = reviewText.toString()
+
+                finish()
+            }
             return true
         }
 

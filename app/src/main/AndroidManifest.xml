@@ -29,7 +29,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".EditMovieActivity"/>
+        <activity
+                android:name=".EditMovieActivity"
+                android:parentActivityName=".LandingActivity"/>
 
     </application>
 

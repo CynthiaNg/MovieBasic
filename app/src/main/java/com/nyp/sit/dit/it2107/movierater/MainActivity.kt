@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.ParseException
@@ -78,6 +79,16 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }
 
+        }
+
+        else if(item?.itemId == R.id.menu_item_reset) {
+            name.setText("", TextView.BufferType.EDITABLE)
+            description.setText("", TextView.BufferType.EDITABLE)
+            date.setText("", TextView.BufferType.EDITABLE)
+            rbtnButtonEnglish.isChecked = true
+            chkbxMyCheckBox1.isChecked = false
+            chkbxMyCheckBox2.visibility = View.GONE
+            chkbxMyCheckBox3.visibility = View.GONE
         }
 
         return super.onOptionsItemSelected(item)
